@@ -693,6 +693,45 @@ footer{
   color: #fff;
 }
 
+.blog{
+  padding: 150px 150px 0 150px;
+}
+
+.blog-box{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 45%;
+  gap: 5rem;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.blog-img img{
+  height: 50vh;
+  background-position: center;
+}
+
+.blog-desc a{
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  transition: all .2s ease-out;
+}
+
+.blog-desc a:hover{
+  color: #088178;
+}
+
+.blog-box h2{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbc0;
+  z-index: -10;
+}
+
 /* responsives in tablet */
 
 
@@ -825,6 +864,14 @@ footer{
     align-items: center;
     justify-content: center;
   }
+
+  /* blog */
+
+  .blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
  
 }
 
@@ -879,6 +926,14 @@ footer{
   gap: 2rem;
 }
 
+.blog-box{
+  align-items: center;
+}
+
+.blog-box h2{
+  font-size: 55px;
+}
+
 }
 
 /* smallest device */
@@ -896,5 +951,9 @@ footer{
    .hero{
     grid-template-columns: 1fr;
    }
+
+   .blog-box h2{
+    font-size: 24px;
+  }
 
 }
