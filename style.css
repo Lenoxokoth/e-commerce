@@ -856,62 +856,19 @@ footer .follow{
 }
 
 /* form-box */
-.form-box{
+.form-box form{
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.form-box h1{
-  font-size: 30px;
-  margin-bottom: 60px;
-  color: #088178;
-  position: relative;
-}
-
-.form-box h1::after{
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  bottom: 6px;
-  left: 50%;
-  transform: translate(-50%);
-  background: #088178;
-  border-radius: 3px;
-}
-
-.input-field{
-  background: #eaeaea;
-  max-width: 440px;
-  margin: 15px 0;
-  display: flex;
-  align-items: center;
-  border-radius: 3px;
-  max-height: 65px;
-  transition: max-height .5s;
-  overflow: hidden;
-}
-
-.input-field input{
+.form-box form input,
+.form-box form textarea{
   width: 100%;
-  background: transparent;
-  padding: 18px 15px;
-}
-
-.input-field i{
-  margin-left: 15px;
-  color: #9999;
-}
-
-form p{
-  text-align: center;
-  font-size: 13px;
-}
-
-form p a{
-  color: #3c00a0;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #1e1e1e;
 }
 
 .field{
@@ -925,11 +882,6 @@ form p a{
   transition: all .4s ease;
 }
 
-.field.disable{
-  color: #000;
-  border: 1px solid #088178;
-  background: transparent;
-}
 
 .field:hover{
   color: #000;
@@ -937,10 +889,6 @@ form p a{
   background: transparent;
 }
 
-.field.field.disable:hover{
-  background: #088178;
-  color: #fff;
-}
 
 
 
@@ -1047,6 +995,20 @@ form p a{
   .blog h2{
     font-size: 40px;
   }
+
+  /* contact */
+
+  .contact-detail{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail-left h2,
+  .detail-left h3{
+    text-align: center;
+  }
+
+ 
   
 }
 
@@ -1068,7 +1030,7 @@ form p a{
 
   .product-detail .single-image{
     margin-right: 0px;
-  }
+  } 
   
 }
 
@@ -1167,6 +1129,7 @@ footer{
   font-size: 30px;
 }
 
+
 }
 
 /* smallest device */
@@ -1205,9 +1168,9 @@ h5{
     padding: 100px 20px 0px 20px;
    }
 
+   .contact-detail .map{
+    width: 100%;
+   }
 
-   /* .blog-box h2{
-    font-size: 24px;
-  } */
 
 }
